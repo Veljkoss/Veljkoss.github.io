@@ -1,0 +1,417 @@
+#body {
+  font-family: futur;
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+@font-face {
+  font-family: "gtr";
+  src: url("font/futur.ttf");
+ }
+
+.tekst {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-align: center;
+	height: 100px;
+	background: #262626;
+	font-family: futur;
+}
+.tekst h1 {	
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	line-height: 100px;
+	color: #fff;
+	font-size:48px;
+	font-family: futur;
+}
+ul {
+	margin:0;
+	padding: 0;
+	background: #DA0000;
+	color: #fff;
+	display: table;
+	text-align:center;
+	width:100%;
+}
+ul li {
+	display: inline-block;
+	list-style: none;
+	float:none;
+}
+ul li a {
+	
+	color: #fff;
+	padding:20px;
+	display: block;
+	text-decoration: none;
+	font-family: futur;
+	
+}
+ul li:hover{
+	background:#262626;
+	color:#f00;
+	cursor:pointer;
+	transition: background-color 1s;
+}
+
+.sticky {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	z-index:1000;
+}
+#tekstislika{
+	display: flex;
+	flex-direction: row;
+	float:left;
+	text-align:center;
+	width:100%;
+}
+#pocetna {
+	display: flex;
+	flex-direction: column;
+	background-image: url("../slike/pocetna.jpg");
+	background-repeat: no-repeat;
+    background-position: center; 
+	background-size: cover; 
+	width: 100%;
+	height: 816px;
+}
+
+#tekst{
+	position: relative;
+	top: 20px;
+	font-size: 4vw;
+	font-weight: bold;
+	text-align: center;
+	font-family: gtr;
+	color: #fff;
+}
+#tekst2{
+	text-align: center;
+	font-size: 1.6vw;
+	font-weight: lighter;
+	text-align: center;
+	font-family: Calibri;
+	color: #fff;
+	width: 100%;
+	padding-top: 30px;
+}
+.celina {
+	display: flex;
+	flex-direction: column;
+	float: left;
+	width: 100%;
+	margin-left:auto;
+	margin-right:auto;
+	background-color: white;
+}
+#fitnes {
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+	margin-left: 30%;
+	float: right;
+	position:relative;
+	width:45%;
+	text-align:justify;
+}
+.slika1 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-right: 10px;
+	padding-left: 20px;
+}
+.slika1 img{
+	display: flex;
+	flex-direction: row;
+	float: left;
+	width:50%;
+	padding-top: 20px;
+}
+
+.podnsalov  {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	font-family: gtr;
+	font-size: 2vw;
+}
+
+.paragraf {
+	display: flex;
+	flex-direction: row;
+	font-family: Calibri;
+	font-size: 1.5vw;
+	width:80%;
+	
+}
+.podparagraf {
+	display: flex;
+	flex-direction: row;
+	font-family: Calibri;
+	font-size: 1.5vw;
+	width:70%;
+	padding-left:30px;
+}
+
+.slika2 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-left: 10px;
+	padding-right: 20px;
+}
+.slika2 img{
+	display: flex;
+	flex-direction: row;
+	float: right;
+	position:relative;
+	width:50%;
+}
+
+.celinap {
+	display: flex;
+	flex-direction: row;
+	float: left;
+	width: 100%;
+}
+#fitnes1p {
+	display: flex;
+	flex-direction: column;
+	padding-top: 20px;
+	float: right;
+	width:50%;
+	text-align:justify;
+}
+.slika1p {
+	display: flex;
+	flex-direction: row;
+	padding-top: 20px;
+	float: left;
+	width: 50%;
+}
+.slika1p img{
+	display: flex;
+	flex-direction: row;
+	margin-left: 20px;
+	width: 100%;
+}
+.podnsalov1p {
+	display: flex;
+	flex-direction: row;
+	font-family: gtr;
+	padding-left: 50px;
+}
+.paragraf1p {
+	display: flex;
+	flex-direction: row;
+	font-family: Calibri;
+	font-size: 20px;
+	width:80%;
+	padding-left: 50px;
+}
+.podparagraf1p {
+	display: flex;
+	flex-direction: row;
+	font-family: Calibri;
+	font-size: 20px;
+	width:50%;
+	padding-left: 50px;
+}
+#fitnes2p {
+	display: flex;
+	flex-direction: column;
+	padding-top: 20px;
+	float: left;
+	width:50%;
+	text-align:justify;
+}
+.slika2p {
+	display: flex;
+	flex-direction: row;
+	padding-top: 20px;
+	float: right;
+	width: 50%;
+}
+.slika2p img{
+	display: flex;
+	flex-direction: row;
+	margin-left: 20px;
+	width: 100%;
+}
+.podnsalov2p {
+	
+	font-family: gtr;
+	padding-left: 50px;
+}
+.paragraf2p {
+	
+	font-family: Calibri;
+	font-size: 20px;
+	width:80%;
+	padding-left: 50px;	
+}
+.podparagraf2p {
+	font-family: Calibri;
+	font-size: 20px;
+	width:50%;
+	padding-left: 50px;	
+}
+
+.footer {
+	float: left;
+    width: 100%;
+    color: #9B9B9B;
+    background: #262626;
+}
+
+.sadrzajFooter {
+	display: block;
+    padding: 10px;
+    margin: 0px auto;
+    text-align: center;
+    font: 25px Calibri;
+    font-size: 14px;
+	
+    width:250px;
+}
+
+.foot {
+	display:inline;
+    line-height: 70px;
+
+}
+.sadrzajFooter img {
+	height:100px;
+	margin-top:20px;
+}
+
+.container { 
+	display: inline-block;
+ 	margin-left:auto;
+ 	margin-right:auto;
+
+}
+
+.cursor {
+	cursor: pointer;
+}
+
+.numbertext {
+	color: #262626;
+ 	font-size: 12px;
+  	padding: 8px 12px;
+ 	position: absolute;
+ 	top: 0;
+}
+
+.row:after {
+	content: "";
+  	display: table;
+  	clear: both;
+}
+
+.demo {
+	opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+.BMI {
+	
+	padding: 30px; 
+	
+}
+#dugme{
+	margin-left: 27%;
+	width: 50%;
+}
+#planishrane {
+	text-align: center;
+	font-size: 50px;
+}
+#planms{
+	display: flex;
+	flex-direction: row;
+	padding: 20px;
+	text-align:center;
+	
+	
+}
+
+.columnLeft {
+	
+	float: left;
+	width: 90%;
+}
+
+.columnRight {
+	
+	padding-top: 10%;
+	text-align: center;
+	float: right;
+	width: 90%;
+}
+
+#PDF h1{
+	
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+
+}
+#maliBMI{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	text-align: center;
+}
+
+#kontakt{
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	
+}
+
+@media (max-width: 1024px) {
+  .slika1p, .slika2p {  
+    width: 100%;
+  }
+  
+  .slika1p img, .slika2p img {  
+    width: 92%;
+  }
+  
+  #fitnes1p, #fitnes2p {   
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+
+  }
+  .celinap{
+	  flex-direction: column;
+  }
+
+  
+}
+
+@media (max-width: 700px) {
+	#kontakt{
+	  flex-direction: column;
+	  text-align: center;
+	  margin-left: 10%;
+  }
+}

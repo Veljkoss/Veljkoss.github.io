@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="ütf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Atletis Gym </title>
+	<link rel="stylesheet" href="css/stil.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script src="js/jsIshrana.js"></script>
+	<script type="text/javascript">
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 100) {
+				$('.menu').addClass("sticky");
+			}
+			else {
+				$('.menu').removeClass("sticky");
+			}
+		})
+	</script>
+</head>
+
+<body id="body">
+
+	<div class="tekst">
+		<a href="Glavna.html"><img src="slike/slika.png" height="90px"></a>
+	</div>
+
+	<ul class="menu">
+		<li><a href="Ishrana.html">Ishrana</a> </li>
+		<li><a href="Programi.html">Programi</a> </li>
+		<li><a href="kontakt.html">Kontakt</a> </li>
+	</ul>
+
+	<!-------------BMI KALKULATOR---->
+	<div class="BMI">
+		<img src="slike/guga.png" width="100%" height="200px">
+
+
+		<div id="maliBMI">
+			<h1>BMI Kalkulator</h1>
+			<p>Unesite Vašu visinu: <input type="text" id="height" />
+				<select type="multiple" id="heightunits">
+					<option value="metres" selected="selected">m</option>
+					<option value="inches">inči</option>
+				</select>
+			</p>
+			<p>Unesite Vašu težinu: <input type="text" id="weight" />
+				<select type="multiple" id="weightunits">
+					<option value="kg" selected="selected">kilogrami</option>
+					<option value="lb">lb</option>
+				</select>
+			</p>
+			<input type="submit" id = "dugme" value="Izračunaj" onclick="Izračunaj();">
+
+			<h1>Vaš BMI je: <span id="output">?</span></h1>
+
+			<h2>To znači da imate: <span id="comment"> ?</span> </h2>
+
+			<!------- PLAN ISHRANE--->
+			<div id="PDF">
+			</div>
+
+			<h1 id="planishrane"> PLAN ISHRANE </h1>
+		</div>
+
+		<div id="planms">
+			<table>
+				<tr>
+					<td>
+						<h1> Muskarci </h1> <br> <br> <br>
+
+						<p> Ukoliko zelite da mrsavite bez gubljenja misicne mase pogledajte sledeci<a
+								href="pdf/Muskarci mrsavljenje.pdf"> dokument </a> </p> <br> <br> <br>
+						<p> Ukoliko zelite da dodajte misica bez dodavanja masnih naslaga pogledajte sledeci<a
+								href="pdf/Muskarci dodavanje misicne mase.pdf"> dokument </a> </p> <br> <br> <br> <br>
+					</td>
+					<td>
+						<h1> Zene </h1> <br> <br> <br>
+						<p> Ukoliko zelite da mrsavite bez gubljenja misicne mase pogledajte sledeci<a
+								href="pdf/Zene mrsavljenje.pdf"> dokument </a> </p> <br> <br> <br>
+						<p> Ukoliko zelite da dodajte misica bez dodavanja masnih naslaga pogledajte sledeci<a
+								href="pdf/Zene masa.pdf"> dokument </a> </p> <br> <br> <br> <br>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+
+
+	<footer class="footer">
+		<div class="sadrzajFooter">
+			<img src="slike/logoDonji.png">
+			<div class="foot">Copyright © Atletis 2019</div>
+		</div>
+
+	</footer>
+
+
+
+
+</body>
+
+</html>
