@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="ütf-8">
+  <title> Atletis Gym </title>
+  <link rel="stylesheet" href="css/stil.css">
+
+  <script src="js/jsKontakt.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script type="text/javascript">
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {
+        $('.menu').addClass("sticky");
+      }
+      else {
+        $('.menu').removeClass("sticky");
+      }
+    })			
+  </script>
+
+
+</head>
+
+<body id="body">
+
+  <div class="tekst">
+    <a href="Glavna.html"><img src="slike/slika.png" height="90px"></a>
+  </div>
+
+  <ul class="menu">
+    <li><a href="ishrana.html">Ishrana</a> </li>
+    <li><a href="Programi.html">Programi</a> </li>
+    <li><a href="kontakt.html">Kontakt</a> </li>
+  </ul>
+
+  <style>
+    input[type=text],
+    select,
+    textarea {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+
+    input[type=submit] {
+      box-sizing: border-box;
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+      box-sizing: border-box;
+      background-color: #45a049;
+    }
+
+    .container {
+      width: 100%;
+      box-sizing: border-box;
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 30px;
+    }
+
+    .fus {
+      font-size: 12px;
+
+    }
+  </style>
+
+  <div id="kontakt">
+    <div class="columnLeft">
+      <div style="padding-left: 20px;box-sizing: border-box;">
+        <p style="padding-left: 30px;"> Zakazite individualni trening sa nasim trenerima </p> <br>
+
+        <div class="container">
+
+
+          <form name="myForm" action="javascript:alert('Uspesno ste poslali podatke.');" method="post"
+            onsubmit="return validateForm()">
+
+            <label for="fname">Ime* </label>
+            <input type="text" name="fname" placeholder="Vase Ime...">
+
+            <label for="lname">Prezime*</label>
+            <input type="text" name="flastname" placeholder="Vase Prezime...">
+
+            <label for="email">E-mail*</label>
+            <input type="text" name="eMail" placeholder="Vas E-mail...">
+
+            <label for="Trener">Trener</label>
+            <select id="Trener" name="Trener">
+              <option value="Radovan">Radovan</option>
+              <option value="Veljko">Veljko</option>
+              <option value="Marko">Marko</option>
+            </select>
+
+            <label for="subject">Poruka*</label>
+            <textarea name="fmessage" placeholder="Napisite Datum, Vreme ..." style="height:200px"></textarea>
+
+            <input type="submit" value="Posalji">
+            <p class="fus"> Zvezdicom su obelezena obavezna polja</p>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+    <div class="columnRight">
+      <p style="margin-bottom: 30px;"> LOKACIJA TERETANE <br /> <br />Jove Ilića 154 <br /><br /> Beograd</p>
+      <div id="map" style="height:300px; margin-left: 20px;margin-right: 20px;">
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    function myMap() {
+      var myCenter = new google.maps.LatLng(44.772762, 20.475165);
+      var mapCanvas = document.getElementById("map");
+      var mapOptions = { center: myCenter, zoom: 15 };
+      var map = new google.maps.Map(mapCanvas, mapOptions);
+      var marker = new google.maps.Marker({ position: myCenter });
+      marker.setMap(map);
+    }
+  </script>
+
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6hwBovAkaZm4Cn9lZH1GRfqOmXb9RTYY&callback=myMap"></script>
+
+
+
+
+
+
+
+  <div style="clear:both;"></div>
+  <footer class="footer">
+    <div class="sadrzajFooter">
+      <img src="slike/logoDonji.png">
+      <div class="foot">Copyright © Atletis 2019</div>
+
+
+  </footer>
+
+</body>
+
+
+
+</html>
